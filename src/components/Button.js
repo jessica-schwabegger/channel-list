@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Button.css";
 
-const Button = ({ children, disabled, className, onClick }) => {
-  const [toggleDescription, setToggleDescription] = useState(false);
-    
+const Button = ({ children, disabled, className, onClick }) => {    
     return (
         <button
             disabled={disabled}
