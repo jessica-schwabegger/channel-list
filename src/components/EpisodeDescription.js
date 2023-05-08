@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button } from './Button';
 import "./EpisodeDescription.css";
 
 const EpisodeDescription = ({ description }) => {
@@ -9,9 +10,9 @@ const EpisodeDescription = ({ description }) => {
             {toggleDescription &&
                 <p>{description}</p>
             }
-            <button onClick={() => setToggleDescription(!toggleDescription)}>
+            <Button onClick={() => setToggleDescription(!toggleDescription)}>
                 {toggleDescription ? "- Visa mindre" : "+ Visa mer"}
-            </button>
+            </Button>
         </div>
     )
 };

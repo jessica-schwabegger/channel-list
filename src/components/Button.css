@@ -1,0 +1,23 @@
+button {
+    background-color: white;
+    color: rgb(42, 126, 190);
+    width: 130px;
+    border: 2px solid rgb(42, 126, 190);
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.6;
+  }
+
+  .disabled-button {
+    color: lightgrey;
+    border-color: lightgrey;
+  }
+  
+  .disabled-button:hover {
+    opacity: 1;
+  }
