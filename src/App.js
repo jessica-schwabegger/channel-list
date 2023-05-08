@@ -22,7 +22,6 @@ function App() {
   useEffect(() => {
     getDateToDisplay();
     limitToSevenDays(counter);
-    console.log(dateToDisplay);
     const getEpisodes = async () => {
       const data = await fetch(`https://api.sr.se/api/v2/scheduledepisodes?channelid=164&date=${dateToDisplay}&format=json`);
       const response = await data.json();
