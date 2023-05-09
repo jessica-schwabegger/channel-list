@@ -7,8 +7,8 @@ import { Button } from './components/Button';
 function App() {
   const todaysDate = new Date().toLocaleDateString("sv-SE");
   const [scheduleData, setScheduleData] = useState();
-  let [counter, setCounter] = useState(0);
-  let [dateToDisplay, setDateToDisplay] = useState(todaysDate);
+  const [counter, setCounter] = useState(0);
+  const [dateToDisplay, setDateToDisplay] = useState(todaysDate);
   const [disableNext, setDisableNext] = useState(false);
   const [disablePrevious, setDisablePrevious] = useState(true);
 
@@ -29,7 +29,7 @@ function App() {
     };
 
     getEpisodes();
-  },[counter, dateToDisplay]);
+  },[counter]);
 
   const formatTime = (fullDate) => {
     const formatted =  moment(fullDate).format();
